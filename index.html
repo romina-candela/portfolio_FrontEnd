@@ -4,11 +4,210 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Googl fonts
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Portfolio Web</title>
-    <h1>Mi portfolio web</h1>
-    <p>texto de prueba </p>
+
 </head>
 <body>
-    
+
+  <!-- Cabecera -->
+  <header class="container-fluid bg-primary d-flex justify-content-center">
+    <p class="text-light mb-0 p-2 fs-6">Contactanos 1-(09890)-234-567</p>
+  </header>
+
+  <!-- Menú -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2" id="menu">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <span class=".text-light fs-5 fw-bold">Romina Dev</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre Mi</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Skills</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Proyectos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-dark  text-light btn-outline-secondary" type="button">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!--SLIDER-->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/Slider2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/Slider3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/Slider4.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--INTRO:SOBRE MI-->
+
+  <section class="w-50 mx-auto text-center pt-5" id="intro">
+    <h1 class="p-3 fs-2 border-top border-3">Romina Candela Ramos</h1>
+    <h3 class="text-primary">Full Stack - Developer</h3>
+    <p class="p-3 fs-4">Mi Portfolio Web</p>
+  </section>
+
+  <!--INTRO:SKILS-->
+  <section class="container-fluid">
+    <div class="row w-75 mx-auto skill-fila">
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+        <img src="./img/Slider5.jpg" alt=""  width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1"> SKILL 1</h3>
+          <P class="px-4">Desarrollo front end</P>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex  my-5 icono-wrap">
+        <img src="./img/Slider5.jpg" alt=""  width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1"> SKILL 2</h3>
+          <P class="px-4">Desarrollo back end</P>
+        </div>
+      </div>
+
+    </div>    
+
+    <div class="row w-75 mx-auto skill-fila">
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+        <img src="./img/Slider5.jpg" alt=""  width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1"> SKILL 3</h3>
+          <P class="px-4">Desarrollo Date base</P>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex  my-5 icono-wrap">
+        <img src="./img/Slider5.jpg" alt=""  width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1"> SKILL 4</h3>
+          <P class="px-4">Desarrollo ux/ui</P>
+        </div>
+      </div>
+
+    </div>
+  <!--INTRO:PROYECTOS-->
+
+  </section class="container pt-5">
+  <div class="w-75 m-auto text-center" id="proyectos">
+    <h2 class="mb-5 fs-2">Mis Proyectos</h2>
+    <p class="fs-4 parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, ab dicta.
+    Optio quisquam aperiam cumque molestiae atque quam dignissimos, veniam eligendi a temporibus soluta, dolor mollitia, adipisci fugit nostrum id!</p>
+  </div>
+  <div class=" row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/Slider1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PROYECTO UNO</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Acceso a GitHub</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/Slider1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PROYECTO 2</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Acceso a GitHub</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/Slider1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PROYECTO 3</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Acceso a GitHub</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--INTRO:CONTACTO-->
+  <section>
+    <div id="contacto">
+      <div class="mapa"></div>
+      <div class="frm-contact">
+        <div class="wrapper">
+          <h2>MI CONTACTO</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </section>
+   
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
 </body>
 </html>
